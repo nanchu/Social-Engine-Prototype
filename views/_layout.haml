@@ -1,0 +1,24 @@
+!!!
+%html
+	%head
+		%meta(charset="utf-8")
+		%meta(http-equiv="Content-language" content="en")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+		%title
+			= "Social NG"
+		%meta{:charset => "utf-8"}
+		%link{:rel=>"stylesheet", :href=>"/stylesheets/application.css"}
+		= javascript_include_tag "jquery"
+		= javascript_include_tag "application"
+
+	- bodyClass = yield :bodyClass
+	%body{ :class => "#{bodyClass}" }
+		%nav
+			.logo
+				%span Social
+				%span Engine
+
+		.content
+
+				
+			= yield
