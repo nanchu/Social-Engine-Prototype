@@ -76,37 +76,80 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 body {
   background-color: white;
-  font-family: Helvetica;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-size: 14px;
 }
 
 nav {
-  padding: 10px 20px;
+  padding: 30px 20px;
   background-color: #222222;
+  text-align: center;
 }
-
-.logo {
+nav .logo {
   font-size: 2.2em;
   color: #00aeef;
 }
-.logo span:last-of-type {
+nav .logo span {
   margin-left: -8px;
   font-weight: bold;
   color: #0089bc;
 }
+nav .slogan {
+  color: #828693;
+}
+
+.content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 10px 0px;
+  color: white;
+}
+
+.button {
+  padding: 8px 18px;
+  background-color: #aaaaaa;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.content {
+  margin: 0px auto;
+  width: 940px;
+  padding: 20px 20px;
+}
+
+.introduction p {
+  margin: 10px 0px;
+  font-size: 16px;
+}
 
 .selector-wrapper {
   width: 100%;
-  text-align: center;
-  margin: 60px 0;
+  padding: 30px 0px;
 }
-
-.selector {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 30px;
+.selector-wrapper .selectors {
+  width: 526px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.selector-wrapper .selectors a {
   display: inline-block;
+  width: 200px;
+  margin: 0px 30px;
+}
+.selector-wrapper .selectors a .selector {
+  position: relative;
+  width: 200px;
+  height: 200px;
   background-size: 35%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -117,20 +160,16 @@ nav {
   -o-border-radius: 50%;
   border-radius: 50%;
 }
-.selector:hover {
+.selector-wrapper .selectors a .selector:hover {
   background-color: #2f2f2f;
 }
-.selector#SE {
+.selector-wrapper .selectors a .selector#SE {
   background-image: url("/images/SE-icon.png");
 }
-.selector#Pro {
+.selector-wrapper .selectors a .selector#Pro {
   background-image: url("/images/pro-icon.png");
 }
-.selector h2 {
+.selector-wrapper .selectors a h2 {
   color: #222222;
-  position: absolute;
-  bottom: -40px;
   text-align: center;
-  left: 0;
-  right: 0;
 }

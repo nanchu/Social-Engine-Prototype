@@ -1,15 +1,25 @@
 - content_for :bodyClass do
 	index
+.introduction
+	%h1 我们在做什么
+
+	%p SocialEngine是企业专家和公益组织的桥梁。
+
+	%p 对公益组织，我们会帮助你们梳理现有业务，寻找有价值的问题，向企业专家展示项目以争取帮助。
+
+	%p 对企业专家，我们会帮你找到心仪的公益组织，与他们一起学习最新的创业思维，在实践中引领他们完成项目。
+
 
 .selector-wrapper
-	%h1 Are you a...
+	%h1 活动详情介绍
+	%label 请选择自己的角色
 	
-	%a{:href=>"/professionals"}
-		.selector#Pro
-			%h2 Professional
+	.selectors
+
+		%a{:href=>"/professionals"}
+			.selector#Pro
+			%h2 企业专家
 	
-	%a{:href=>"/social-entrepreneur"}
-		.selector#SE
-			%h2 Social Entrepreneur 
-	
-	
+		%a{:href=>"/social-entrepreneur"}
+			.selector#SE
+			%h2 公益组织

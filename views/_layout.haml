@@ -5,7 +5,7 @@
 		%meta(http-equiv="Content-language" content="en")
 		%meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
 		%title
-			= "Social NG"
+			= "Social Engine"
 		%meta{:charset => "utf-8"}
 		%link{:rel=>"stylesheet", :href=>"/stylesheets/application.css"}
 		= javascript_include_tag "jquery"
@@ -14,11 +14,12 @@
 	- bodyClass = yield :bodyClass
 	%body{ :class => "#{bodyClass}" }
 		%nav
-			.logo
+			%a.logo{ :href=> "/index" }
 				%span Social
 				%span Engine
+			.slogan 为公益组织注入企业基因
 
 		.content
-
-				
 			= yield
+
+		%footer Powered by ThoughtWorks
